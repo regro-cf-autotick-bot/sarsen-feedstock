@@ -1,5 +1,5 @@
 {% set name = "sarsen" %}
-{% set version = "0.1" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sarsen-{{ version }}.tar.gz
-  sha256: 5bce7160340e50a3e9a3e61a269935225afc77af767ed0114175c9e532b3b5c7
+  sha256: 1b5c9ea33f8dedbf2c3a716390aaa405ccaa93b4024d4af6a04a50d00e1e5046
 
 build:
   number: 0
