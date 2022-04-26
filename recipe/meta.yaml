@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sarsen-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1b5c9ea33f8dedbf2c3a716390aaa405ccaa93b4024d4af6a04a50d00e1e5046
 
 build:
@@ -29,8 +29,9 @@ requirements:
     - python >=3.8
     - rioxarray
     - scipy
+    - typer
     - xarray >=0.20.2
-    - xarray-sentinel >=0.4
+    - xarray-sentinel >=0.9.1
 
 test:
   imports:
