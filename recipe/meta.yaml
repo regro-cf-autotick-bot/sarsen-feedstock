@@ -1,5 +1,5 @@
 {% set name = "sarsen" %}
-{% set version = "0.9.1.post1" %}
+{% set version = "0.9.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 71aa1b0bc5eb5dcee1ed321e20bf6707e201bea59de0e5342142f5db15cf2bd0
+  sha256: 71a05975c6951223a089a73611e7bde36a34cb753767aae10fca3a524a16f28e
 
 build:
   number: 0
@@ -24,11 +24,12 @@ requirements:
     - setuptools_scm
   run:
     - attrs
-    - click
+    - flox
     - numpy
+    - pandas
     - python >=3.8
+    - rasterio
     - rioxarray
-    - scipy
     - typer
     - xarray >=2022.06.0
     - xarray-sentinel >=0.9.3
